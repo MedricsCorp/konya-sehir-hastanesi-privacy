@@ -40,6 +40,8 @@
   h2{font-size:19px;color:var(--navy);margin:32px 0 10px;padding-top:24px;border-top:1px solid var(--border);font-weight:600}
   h2:first-of-type{border-top:0;padding-top:8px}
   p{margin:0 0 12px}
+  h3{font-size:16.5px;color:var(--teal-dark);margin:22px 0 8px;font-weight:600}
+  .closing{margin-top:18px;color:var(--muted);font-size:14.5px}
   ul{margin:0 0 12px;padding-inline-start:22px;padding-left:0;padding-right:0}
   li{margin:4px 0}
   .table{width:100%;border-collapse:collapse;font-size:14.5px;margin:6px 0 12px}
@@ -96,57 +98,88 @@
     <div class="pill"><strong>Satış ve reklam yok</strong>Veriler satılmaz, reklam için kullanılmaz.</div>
   </div>
 
-  <h2>1. Kapsam</h2>
-  <p>Bu gizlilik politikası, Google Play'de <strong>T.C. Sağlık Bakanlığı</strong> tarafından yayınlanan ve <strong>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</strong> (“KEYDATA”) tarafından geliştirilen <strong>Konya Şehir Hastanesi</strong> mobil uygulaması (paket adı: <code>tr.gov.saglik.konyasehirhastanesi</code>, “Uygulama”) için geçerlidir.</p>
-  <p>Uygulama; hastane içi harita ve yol tarifi, birim ve hizmet arama, iletişim bilgileri ve yakındaki eczaneleri bulma hizmetleri sunar. Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Google Play Kullanıcı Verileri Politikası dikkate alınarak hazırlanmıştır.</p>
+  <h2>Giriş</h2>
+  <p>Konya Şehir Hastanesi'nin hastane rehberi ve bina içi yol bulma mobil uygulaması <strong>Konya Şehir Hastanesi</strong>'ni (paket adı: <code>tr.gov.saglik.konyasehirhastanesi</code>, “Uygulama”) kullandığınız için teşekkür ederiz. Uygulama, Google Play'de <strong>T.C. Sağlık Bakanlığı</strong> tarafından yayınlanmakta ve <strong>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</strong> (“KEYDATA”, “biz”) tarafından geliştirilmektedir. Gizliliğiniz bizim için önemlidir.</p>
 
-  <h2>2. Sizden istemediğimiz bilgiler</h2>
-  <p>Uygulamada hesap oluşturma veya giriş yapma yoktur. Adınız, T.C. kimlik numaranız, telefon numaranız, e-posta adresiniz, sağlık bilgileriniz, fotoğraflarınız veya rehberiniz gibi kişisel bilgiler <strong>istenmez ve toplanmaz</strong>.</p>
-
-  <h2>3. Otomatik olarak işlenen veriler</h2>
-  <p>Uygulamanın çalışması ve iyileştirilmesi için aşağıdaki veriler, kimliğinizle ilişkilendirilmeden işlenir:</p>
-  <div class="scroll"><table class="table">
-    <tr><th>Veri</th><th>Amaç</th><th>İşleyen hizmet</th></tr>
-    <tr><td>Konum (hassas ve yaklaşık)</td><td>Hastane içinde konumunuzu göstermek, yol tarifi vermek ve yakındaki eczaneleri listelemek</td><td>Situm (bina içi konumlama), Google Haritalar, Uygulama hizmet sunucuları</td></tr>
-    <tr><td>Uygulama etkinliği (açılan ekranlar, etkileşimler)</td><td>Kullanım istatistikleri ve uygulamanın iyileştirilmesi</td><td>Google Firebase Analytics</td></tr>
-    <tr><td>Çökme kayıtları ve tanılama verileri</td><td>Hataları tespit edip gidermek</td><td>Google Firebase Crashlytics</td></tr>
-    <tr><td>Cihaz ve uygulama kimlikleri (Firebase kurulum kimliği, bildirim anahtarı)</td><td>Bildirim göndermek, istatistik ve hata kayıtlarını ayırt etmek</td><td>Google Firebase</td></tr>
-  </table></div>
-  <p>Konum verisi yalnızca konum izni verdiğinizde ve ilgili özelliği kullandığınızda işlenir. Eczane aramasında konumunuz yalnızca size yakın eczaneleri getirmek için sunucuya gönderilir.</p>
-
-  <h2>4. Yalnızca cihazınızda tutulan veriler</h2>
-  <p>Dil tercihiniz ve son aramalarınız cihazınızda şifreli olarak saklanır; bizimle paylaşılmaz. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir.</p>
-
-  <h2>5. İzinler</h2>
+  <h3>Veri yönetimi ilkelerimiz</h3>
+  <p>Uygulamayı geliştirirken ve işletirken aşağıdaki veri yönetimi ilkelerine bağlı kalırız:</p>
   <ul>
-    <li><strong>Konum ve Bluetooth:</strong> Hastane içinde konumunuzu belirlemek ve yol tarifi vermek için.</li>
-    <li><strong>Mikrofon:</strong> Yalnızca sesli arama düğmesine bastığınızda, cihazınızın konuşma tanıma hizmetiyle aramanızı metne çevirmek için. Uygulama ses kaydı saklamaz.</li>
+    <li>Kullanıcı gizliliğini korumak</li>
+    <li>Yalnızca Uygulamanın çalışması için gereken veriyi işlemek (veri minimizasyonu)</li>
+    <li>Kullanıcı verilerinin gizliliğini sağlamak</li>
+    <li>Kullanıcı verileri için uygun düzeyde güvenlik sağlamak</li>
+  </ul>
+  <p>Bu politika, Uygulamayı kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar. Politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Google Play Kullanıcı Verileri Politikası dikkate alınarak hazırlanmıştır. Lütfen dikkatle okuyunuz. Bu politikayı kabul etmiyorsanız lütfen Uygulamayı kullanmayınız.</p>
+
+  <h2>1. Bilgilerinizin toplanması</h2>
+  <p><strong>1.1. Kayıt gerekmez.</strong> Uygulamada hesap oluşturma veya giriş yapma yoktur. Tüm özellikleri adınız, T.C. kimlik numaranız, telefon numaranız veya e-posta adresiniz gibi kişisel bilgiler vermeden kullanabilirsiniz.</p>
+  <p><strong>1.2. Sağladığınız bilgiler.</strong> Uygulamaya girdiğiniz tek bilgi, arama alanına yazdığınız veya söylediğiniz ifadelerdir (ör. bir birim ya da oda adı). Bu ifadeler sonuçları göstermek için kullanılır. Sesli arama düğmesine bastığınızda konuşmanız, cihazınızın konuşma tanıma hizmeti tarafından metne çevrilir; Uygulama ses kaydı saklamaz.</p>
+  <p><strong>1.3. Cihaz verileri ve analiz.</strong> Uygulama, Google Firebase Analytics ve Firebase Crashlytics aracılığıyla cihaz modeli, işletim sistemi ve uygulama sürümü, kullanım bilgileri (ör. görüntülenen ekranlar, dokunulan özellikler) ile çökme kayıtları ve tanılama verilerini otomatik olarak toplar. Firebase Analytics, Android reklam kimliğini de toplayabilir. Uygulama reklam göstermez; bu bilgiler yalnızca kararlılığı ve kullanım kolaylığını artırmak için kullanılır ve kimliğinizle ilişkilendirilmez.</p>
+  <p><strong>1.4. Bildirimler.</strong> Hastane duyurularını iletebilmek için Firebase Cloud Messaging cihazınıza özel bir bildirim anahtarı oluşturur.</p>
+  <p><strong>1.5. Asla toplamadıklarımız.</strong> Sağlık bilgilerinizi, tıbbi kayıtlarınızı, rehberinizi, fotoğraflarınızı, dosyalarınızı veya mesajlarınızı toplamayız ve veri aracılarından veri satın almayız.</p>
+
+  <h3>1.6. Konum hizmetleri</h3>
+  <p>Uygulama cihazınızın konumuna yalnızca konum izni verdiğinizde ve konuma dayalı bir özelliği kullandığınızda erişir.</p>
+  <p><strong>(a) Uygulama kullanılırken konum.</strong> Bina içi yol bulma özelliği, hastane içindeki konumunuzu göstermek ve yol tarifi vermek için Situm bina içi konumlama hizmeti aracılığıyla GPS, Bluetooth ve Wi-Fi sinyallerini kullanır.</p>
+  <p><strong>(b) Yakındaki eczaneler.</strong> Yakınınızdaki eczaneleri aradığınızda konum koordinatlarınız, yalnızca size yakın eczaneleri listelemek amacıyla Uygulamanın hizmet sunucusuna gönderilir.</p>
+  <p><strong>(c) Arka planda konum.</strong> Uygulama kullanılmadığı sırada konumunuza erişmez ve arka planda konum izni istemez.</p>
+  <p><strong>(d) Konum neden kullanılır, neden kullanılmaz.</strong> Kullanım amacı: yol bulma ve eczane arama. Kullanılmadığı amaçlar: reklam, pazarlama, profil oluşturma veya veri satışı.</p>
+  <p><strong>(e) Paylaşım ve üçüncü taraflar.</strong> Konumunuzu üçüncü tarafların kendi amaçları için kullanmasına izin vermeyiz. Konum verisi yalnızca Situm ve Google Haritalar gibi hizmet sağlayıcılar tarafından Uygulama adına işlenir. Cihazınızın işletim sisteminin konum hizmetleri de konum sinyallerini kendi işleyişinin bir parçası olarak işleyebilir.</p>
+  <p><strong>(f) Kontrol sizde.</strong> Uygulamayı konum özelliklerini açmadan da kullanabilirsiniz. Konum iznini cihaz ayarlarından istediğiniz zaman verebilir veya geri alabilirsiniz; bu durumda yol bulma ve yakındaki eczaneler özellikleri çalışmayabilir.</p>
+
+  <p><strong>1.7. Yalnızca cihazınızda tutulan veriler.</strong> Dil tercihiniz ve son aramalarınız cihazınızda şifreli olarak saklanır ve bize gönderilmez. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir.</p>
+  <p><strong>1.8. İzinler.</strong> Uygulama aşağıdaki izinleri yalnızca ilgili özelliği kullandığınızda ister:</p>
+  <ul>
+    <li><strong>Konum, Bluetooth ve Wi-Fi:</strong> Hastane içinde konumunuzu belirlemek ve yol tarifi vermek için.</li>
+    <li><strong>Kamera:</strong> Hastanedeki karekodları okutmak için. Görüntüler cihazda işlenir; saklanmaz ve gönderilmez.</li>
+    <li><strong>Mikrofon:</strong> Sesli arama için.</li>
     <li><strong>Telefon:</strong> Uygulamadaki bir numaraya dokunduğunuzda arama başlatmak için.</li>
     <li><strong>Bildirimler:</strong> Hastane duyurularını iletmek için.</li>
   </ul>
-  <p>İzinleri cihaz ayarlarından istediğiniz zaman kapatabilirsiniz; bu durumda ilgili özellik çalışmayabilir.</p>
 
-  <h2>6. Verilerin paylaşılması</h2>
-  <p>Verileriniz satılmaz, kiralanmaz ve reklam amacıyla kullanılmaz. Veriler yalnızca yukarıda belirtilen hizmet sağlayıcılar tarafından, Uygulama adına ve bu politikadaki amaçlarla işlenir. Yasal bir zorunluluk olmadıkça üçüncü kişilerle paylaşılmaz.</p>
+  <h2>2. Bilgilerinizin kullanılması</h2>
+  <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
+  <ul>
+    <li>(a) Uygulamayı ve yol bulma, eczane arama gibi özelliklerini sunmak ve sürdürmek</li>
+    <li>(b) Bildirimlerle hastane duyurularını iletmek</li>
+    <li>(c) Uygulamanın kullanımını ve eğilimleri izleyip analiz ederek Uygulamayı iyileştirmek</li>
+    <li>(d) Hataları ve çökmeleri tespit edip gidermek</li>
+    <li>(e) Uygulamanın ve hizmetlerin güvenliğini sağlamak</li>
+    <li>(f) Yürürlükteki mevzuata ve yasal süreçlere uymak</li>
+  </ul>
+  <p>Bu bilgiler hiçbir zaman reklam amacıyla kullanılmaz.</p>
+
+  <h2>3. Bilgilerinizin paylaşılması</h2>
+  <p>Kullanıcı verilerini satmayız, kiralamayız, lisanslamayız veya gelir elde etmek için kullanmayız. Bilgiler yalnızca şu durumlarda paylaşılabilir:</p>
+  <ul>
+    <li>(a) Yalnızca bizim talimatlarımızla ve Uygulama adına çalışan hizmet sağlayıcılarla: Google (Firebase, Google Haritalar), Situm ve Uygulamanın hizmet sunucuları</li>
+    <li>(b) Yürürlükteki mevzuat, yasal süreç veya yetkili makamların talebi gerektirdiğinde</li>
+    <li>(c) Kullanıcıların, T.C. Sağlık Bakanlığı'nın, bizim veya başkalarının haklarını, mülkiyetini ve güvenliğini korumak için gerektiğinde</li>
+    <li>(d) Sizin onayınızla veya talimatınızla</li>
+  </ul>
   <p>Hizmet sağlayıcıların politikaları: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>, <a href="https://situm.com/en/privacy/" target="_blank" rel="noopener">Situm</a>.</p>
 
-  <h2>7. Saklama süresi ve güvenlik</h2>
-  <p>Kullanım istatistikleri ve hata kayıtları, Firebase'in standart saklama sürelerince tutulur ve ardından otomatik olarak silinir. Cihazdaki veriler şifreli olarak saklanır ve Firebase hizmetlerine veri aktarımı şifreli bağlantı (HTTPS) üzerinden yapılır.</p>
+  <h2>4. Bilgilerinizin güvenliği ve saklanması</h2>
+  <p>Bilgilerinizi yetkisiz erişime, kullanıma ve ifşaya karşı korumak için makul teknik ve idari önlemler alırız. Cihazınızdaki veriler şifreli olarak saklanır ve Firebase hizmetlerine veri aktarımı şifreli bağlantı (HTTPS) üzerinden yapılır. Bununla birlikte, internet veya kablosuz ağ üzerinden yapılan hiçbir veri aktarımının %100 güvenli olduğu garanti edilemez.</p>
+  <p>Kullanım istatistikleri ve hata kayıtları, Firebase'in standart saklama sürelerince tutulur ve ardından otomatik olarak silinir.</p>
 
-  <h2>8. Haklarınız ve veri silme</h2>
-  <p>KVKK'nın 11. maddesi kapsamında verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini isteme gibi haklara sahipsiniz. Uygulamada hesap bulunmadığından verileriniz kimliğinizle eşleştirilmez. Cihazınızdaki veriler, uygulamayı kaldırdığınızda silinir. Diğer talepleriniz için aşağıdaki e-posta adresine yazabilirsiniz.</p>
+  <h2>5. Haklarınız ve veri silme</h2>
+  <p>KVKK'nın 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini ve silinmesini isteme, işlemeye itiraz etme ve zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+  <p>Uygulamada hesap bulunmadığından verileriniz kimliğinizle eşleştirilmez. Cihazınızdaki veriler, Uygulamayı kaldırdığınızda silinir. Diğer talepleriniz için aşağıdaki e-posta adresine yazabilirsiniz.</p>
 
-  <h2>9. Çocukların gizliliği</h2>
+  <h2>6. Çocukların gizliliği</h2>
   <p>Uygulama çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamaz.</p>
 
-  <h2>10. Değişiklikler</h2>
-  <p>Bu politika güncellenebilir. Güncel sürüm her zaman bu sayfada, yürürlük tarihiyle birlikte yayınlanır.</p>
+  <h2>7. Bu politikadaki değişiklikler</h2>
+  <p>Bu politikayı herhangi bir zamanda güncelleyebiliriz. Değişiklikleri, bu sayfanın başındaki “Yürürlük tarihi”ni güncelleyerek duyururuz. Bu sayfayı düzenli olarak incelemenizi öneririz. Değişiklikler yayınlandıktan sonra Uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 
-  <h2>11. İletişim</h2>
+  <h2>8. Bize ulaşın</h2>
+  <p>Bu gizlilik politikasıyla ilgili soru, görüş veya talepleriniz için bize ulaşabilirsiniz:</p>
   <div class="contact">
     <p><strong>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</strong><br>
     E-posta: <a href="mailto:info@keydata.com.tr">info@keydata.com.tr</a></p>
   </div>
+  <p class="closing">Uygulamayı kullanarak bu Gizlilik Politikasını kabul etmiş olursunuz. Bu politikayı kabul etmiyorsanız lütfen Uygulamayı kullanmayınız.</p>
 </article>
 
 <!-- ============================ ENGLISH ============================ -->
@@ -157,57 +190,88 @@
     <div class="pill"><strong>No selling, no ads</strong>Data is never sold or used for advertising.</div>
   </div>
 
-  <h2>1. Scope</h2>
-  <p>This privacy policy applies to the <strong>Konya Şehir Hastanesi</strong> mobile app (package name: <code>tr.gov.saglik.konyasehirhastanesi</code>, the “App”), published on Google Play by <strong>T.C. Sağlık Bakanlığı</strong> (Republic of Türkiye Ministry of Health) and developed by <strong>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</strong> (“KEYDATA”).</p>
-  <p>The App provides indoor maps and turn-by-turn directions inside the hospital, a search for departments and services, contact information, and a finder for nearby pharmacies. This policy was prepared in line with Turkish Personal Data Protection Law No. 6698 (KVKK) and the Google Play User Data policy.</p>
+  <h2>Introduction</h2>
+  <p>Thank you for using <strong>Konya Şehir Hastanesi</strong> (package name: <code>tr.gov.saglik.konyasehirhastanesi</code>, the “App”), the hospital guide and indoor wayfinding mobile app of Konya City Hospital. The App is published on Google Play by <strong>T.C. Sağlık Bakanlığı</strong> (Republic of Türkiye Ministry of Health) and developed by <strong>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</strong> (“KEYDATA”, “we”, “us”). Your privacy is important to us.</p>
 
-  <h2>2. Information we do not ask for</h2>
-  <p>The App has no account creation or login. We <strong>do not ask for or collect</strong> personal information such as your name, Turkish ID number, phone number, email address, health information, photos or contacts.</p>
-
-  <h2>3. Data processed automatically</h2>
-  <p>To run and improve the App, the following data is processed without being linked to your identity:</p>
-  <div class="scroll"><table class="table">
-    <tr><th>Data</th><th>Purpose</th><th>Processed by</th></tr>
-    <tr><td>Location (precise and approximate)</td><td>Showing your position inside the hospital, giving directions and listing nearby pharmacies</td><td>Situm (indoor positioning), Google Maps, the App's service servers</td></tr>
-    <tr><td>App activity (screens viewed, interactions)</td><td>Usage statistics and improving the App</td><td>Google Firebase Analytics</td></tr>
-    <tr><td>Crash logs and diagnostics</td><td>Finding and fixing errors</td><td>Google Firebase Crashlytics</td></tr>
-    <tr><td>Device and app identifiers (Firebase installation ID, notification token)</td><td>Delivering notifications and distinguishing statistics and crash reports</td><td>Google Firebase</td></tr>
-  </table></div>
-  <p>Location is only processed when you grant location permission and use the related feature. When you search for pharmacies, your location is sent to the server only to return pharmacies near you.</p>
-
-  <h2>4. Data kept only on your device</h2>
-  <p>Your language preference and recent searches are stored encrypted on your device and are not shared with us. They are deleted when you uninstall the App or clear its data.</p>
-
-  <h2>5. Permissions</h2>
+  <h3>Data stewardship principles</h3>
+  <p>In developing and operating the App, we follow data stewardship principles, which include:</p>
   <ul>
-    <li><strong>Location and Bluetooth:</strong> to determine your position inside the hospital and give directions.</li>
-    <li><strong>Microphone:</strong> only when you tap the voice search button, to turn your speech into a search using your device's speech recognition service. The App does not store audio.</li>
+    <li>Protecting user privacy</li>
+    <li>Processing only the data the App needs to work (data minimisation)</li>
+    <li>Maintaining the confidentiality of user data</li>
+    <li>Ensuring appropriate levels of security for user data</li>
+  </ul>
+  <p>This policy describes how we collect, use, disclose and safeguard your information when you use the App. It was prepared in line with Turkish Personal Data Protection Law No. 6698 (KVKK) and the Google Play User Data policy. Please read it carefully. If you do not agree with this policy, please do not use the App.</p>
+
+  <h2>1. Collection of your information</h2>
+  <p><strong>1.1. No registration.</strong> The App has no account creation or login. You can use every feature without providing personal information such as your name, Turkish ID number, phone number or email address.</p>
+  <p><strong>1.2. Information you provide.</strong> The only information you enter is what you type or say in the search field (for example, a department or room name). It is used to show you results. When you tap the voice search button, your device's speech recognition service turns your speech into text; the App does not store audio.</p>
+  <p><strong>1.3. Device data and analytics.</strong> Through Google Firebase Analytics and Firebase Crashlytics, the App automatically collects your device model, operating system and app version, usage information (for example, screens viewed and features tapped), and crash logs and diagnostics. Firebase Analytics may also collect the Android advertising ID. The App shows no ads; this information is used only to improve stability and ease of use, and it is not linked to your identity.</p>
+  <p><strong>1.4. Notifications.</strong> To deliver hospital announcements, Firebase Cloud Messaging creates a notification token specific to your device.</p>
+  <p><strong>1.5. What we never collect.</strong> We do not collect your health information, medical records, contacts, photos, files or messages, and we do not buy data from data brokers.</p>
+
+  <h3>1.6. Location services</h3>
+  <p>The App accesses your device location only when you grant location permission and use a location-based feature.</p>
+  <p><strong>(a) Location while using the App.</strong> Indoor wayfinding uses GPS, Bluetooth and Wi-Fi signals through the Situm indoor positioning service to show your position inside the hospital and give you directions.</p>
+  <p><strong>(b) Nearby pharmacies.</strong> When you search for pharmacies near you, your coordinates are sent to the App's service server only to return the pharmacies closest to you.</p>
+  <p><strong>(c) Background location.</strong> The App does not access your location when it is not in use and does not request background location permission.</p>
+  <p><strong>(d) What location is used for, and not used for.</strong> Used for: wayfinding and pharmacy search. Not used for: advertising, marketing, profiling or selling data.</p>
+  <p><strong>(e) Sharing and third parties.</strong> We do not let outside parties use your location for their own purposes. Location is processed only by service providers such as Situm and Google Maps on behalf of the App. Your device's operating system location services may also process location signals as part of their normal operation.</p>
+  <p><strong>(f) Your control.</strong> You can use the App without turning on location features. You can grant or revoke location permission at any time in your device settings; wayfinding and nearby pharmacies may then not work.</p>
+
+  <p><strong>1.7. Data kept only on your device.</strong> Your language preference and recent searches are stored encrypted on your device and are not sent to us. They are deleted when you uninstall the App or clear its data.</p>
+  <p><strong>1.8. Permissions.</strong> The App asks for the following permissions only when you use the related feature:</p>
+  <ul>
+    <li><strong>Location, Bluetooth and Wi-Fi:</strong> to determine your position inside the hospital and give directions.</li>
+    <li><strong>Camera:</strong> to scan QR codes in the hospital. Images are processed on the device and are not stored or sent.</li>
+    <li><strong>Microphone:</strong> for voice search.</li>
     <li><strong>Phone:</strong> to start a call when you tap a phone number in the App.</li>
     <li><strong>Notifications:</strong> to deliver hospital announcements.</li>
   </ul>
-  <p>You can turn permissions off at any time in your device settings; the related feature may then stop working.</p>
 
-  <h2>6. Sharing</h2>
-  <p>Your data is not sold, rented or used for advertising. It is processed only by the service providers listed above, on behalf of the App and for the purposes in this policy. It is not shared with other third parties unless required by law.</p>
+  <h2>2. Use of your information</h2>
+  <p>We use the information we collect to:</p>
+  <ul>
+    <li>(a) Provide and maintain the App and its features, such as wayfinding and pharmacy search</li>
+    <li>(b) Deliver hospital announcements through notifications</li>
+    <li>(c) Monitor and analyse usage and trends to improve the App</li>
+    <li>(d) Detect and fix errors and crashes</li>
+    <li>(e) Keep the App and its services secure</li>
+    <li>(f) Comply with applicable laws and legal processes</li>
+  </ul>
+  <p>This information is never used for advertising.</p>
+
+  <h2>3. Sharing of your information</h2>
+  <p>We do not sell, rent, license or monetise user data. Information may be shared only:</p>
+  <ul>
+    <li>(a) With service providers that act only on our instructions and on behalf of the App: Google (Firebase, Google Maps), Situm and the App's service servers</li>
+    <li>(b) When required by applicable law, legal process or a request from competent authorities</li>
+    <li>(c) When needed to protect the rights, property and safety of users, T.C. Sağlık Bakanlığı, us or others</li>
+    <li>(d) With your consent or at your direction</li>
+  </ul>
   <p>Service provider policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>, <a href="https://situm.com/en/privacy/" target="_blank" rel="noopener">Situm</a>.</p>
 
-  <h2>7. Retention and security</h2>
-  <p>Usage statistics and crash reports are kept for Firebase's standard retention periods and then deleted automatically. On-device data is stored encrypted, and data sent to Firebase services travels over an encrypted connection (HTTPS).</p>
+  <h2>4. Security and retention of your information</h2>
+  <p>We take reasonable technical and organisational measures to protect your information from unauthorised access, use or disclosure. On-device data is stored encrypted, and data sent to Firebase services travels over an encrypted connection (HTTPS). However, no data transmission over the internet or a wireless network can be guaranteed to be 100% secure.</p>
+  <p>Usage statistics and crash reports are kept for Firebase's standard retention periods and then deleted automatically.</p>
 
-  <h2>8. Your rights and data deletion</h2>
-  <p>Under Article 11 of KVKK you have rights such as learning whether your data is processed and asking for it to be corrected or deleted. Because the App has no accounts, your data is not linked to your identity. Data on your device is deleted when you uninstall the App. For any other request, email us at the address below.</p>
+  <h2>5. Your rights and data deletion</h2>
+  <p>Under Article 11 of KVKK, you have the right to learn whether your personal data is processed; to request information about it; to learn the purpose of processing and whether it is used for that purpose; to know the third parties it is transferred to; to ask for it to be corrected or deleted if it is incomplete or inaccurate; to object to processing; and to claim compensation for any damage.</p>
+  <p>Because the App has no accounts, your data is not linked to your identity. Data on your device is deleted when you uninstall the App. For any other request, email us at the address below.</p>
 
-  <h2>9. Children's privacy</h2>
+  <h2>6. Children's privacy</h2>
   <p>The App is not directed at children and does not knowingly collect personal data from children.</p>
 
-  <h2>10. Changes</h2>
-  <p>This policy may be updated. The current version is always published on this page with its effective date.</p>
+  <h2>7. Changes to this policy</h2>
+  <p>We may update this policy at any time. We will announce changes by updating the “Effective date” at the top of this page. We encourage you to review this page periodically. Your continued use of the App after changes are posted means you accept the revised policy.</p>
 
-  <h2>11. Contact</h2>
+  <h2>8. Contact us</h2>
+  <p>If you have any questions, comments or requests about this privacy policy, please contact us:</p>
   <div class="contact">
     <p><strong>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</strong><br>
     Email: <a href="mailto:info@keydata.com.tr">info@keydata.com.tr</a></p>
   </div>
+  <p class="closing">By using the App, you accept this Privacy Policy. If you do not agree to this policy, please do not use the App.</p>
 </article>
 
 <!-- ============================ العربية ============================ -->
@@ -218,57 +282,88 @@
     <div class="pill"><strong>لا بيع ولا إعلانات</strong>لا تُباع البيانات ولا تُستخدم لأغراض إعلانية.</div>
   </div>
 
-  <h2>1. النطاق</h2>
-  <p>تنطبق سياسة الخصوصية هذه على تطبيق الهاتف المحمول <strong><bdi>Konya Şehir Hastanesi</bdi></strong> (اسم الحزمة: <code dir="ltr">tr.gov.saglik.konyasehirhastanesi</code>، ويُشار إليه بـ«التطبيق»)، الذي تنشره على Google Play <strong><bdi>T.C. Sağlık Bakanlığı</bdi></strong> (وزارة الصحة في الجمهورية التركية)، وطوّرته شركة <strong><bdi>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</bdi></strong> («<bdi>KEYDATA</bdi>»).</p>
-  <p>يوفّر التطبيق خرائط داخلية للمستشفى وإرشادات للوصول داخله، والبحث عن الأقسام والخدمات، ومعلومات الاتصال، والبحث عن الصيدليات القريبة. أُعدّت هذه السياسة وفقاً لقانون حماية البيانات الشخصية التركي رقم 6698 (KVKK) وسياسة بيانات المستخدم في Google Play.</p>
+  <h2>مقدمة</h2>
+  <p>شكراً لاستخدامك تطبيق <strong><bdi>Konya Şehir Hastanesi</bdi></strong> (اسم الحزمة: <code dir="ltr">tr.gov.saglik.konyasehirhastanesi</code>، ويُشار إليه بـ«التطبيق»)، وهو تطبيق دليل المستشفى والإرشاد داخل المبنى الخاص بمستشفى مدينة قونية. تنشر التطبيقَ على Google Play <strong><bdi>T.C. Sağlık Bakanlığı</bdi></strong> (وزارة الصحة في الجمهورية التركية)، وتطوّره شركة <strong><bdi>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</bdi></strong> («<bdi>KEYDATA</bdi>»، «نحن»). خصوصيتك مهمة بالنسبة لنا.</p>
 
-  <h2>2. معلومات لا نطلبها منك</h2>
-  <p>لا يتضمن التطبيق إنشاء حساب أو تسجيل دخول. <strong>لا نطلب ولا نجمع</strong> أي معلومات شخصية مثل اسمك أو رقم الهوية التركية أو رقم هاتفك أو بريدك الإلكتروني أو معلوماتك الصحية أو صورك أو جهات الاتصال.</p>
-
-  <h2>3. البيانات التي تُعالج تلقائياً</h2>
-  <p>لتشغيل التطبيق وتحسينه، تُعالج البيانات التالية دون ربطها بهويتك:</p>
-  <div class="scroll"><table class="table">
-    <tr><th>البيانات</th><th>الغرض</th><th>الجهة المعالِجة</th></tr>
-    <tr><td>الموقع (الدقيق والتقريبي)</td><td>إظهار موقعك داخل المستشفى، وإرشادك إلى وجهتك، وعرض الصيدليات القريبة</td><td>Situm (تحديد الموقع داخل المبنى)، خرائط Google، خوادم خدمة التطبيق</td></tr>
-    <tr><td>نشاط التطبيق (الشاشات المعروضة والتفاعلات)</td><td>إحصاءات الاستخدام وتحسين التطبيق</td><td>Google Firebase Analytics</td></tr>
-    <tr><td>سجلات الأعطال وبيانات التشخيص</td><td>اكتشاف الأخطاء وإصلاحها</td><td>Google Firebase Crashlytics</td></tr>
-    <tr><td>معرّفات الجهاز والتطبيق (معرّف تثبيت Firebase، رمز الإشعارات)</td><td>إرسال الإشعارات، والتمييز بين سجلات الإحصاءات والأعطال</td><td>Google Firebase</td></tr>
-  </table></div>
-  <p>لا يُعالج الموقع إلا عندما تمنح إذن الوصول إلى الموقع وتستخدم الميزة المرتبطة به. عند البحث عن الصيدليات، يُرسل موقعك إلى الخادم فقط لعرض الصيدليات القريبة منك.</p>
-
-  <h2>4. بيانات تبقى على جهازك فقط</h2>
-  <p>تُحفظ لغة التطبيق التي تختارها وعمليات البحث الأخيرة مشفّرةً على جهازك، ولا تُرسل إلينا. وتُحذف عند إلغاء تثبيت التطبيق أو مسح بياناته.</p>
-
-  <h2>5. الأذونات</h2>
+  <h3>مبادئنا في إدارة البيانات</h3>
+  <p>نلتزم في تطوير التطبيق وتشغيله بمبادئ إدارة البيانات التالية:</p>
   <ul>
-    <li><strong>الموقع والبلوتوث:</strong> لتحديد موقعك داخل المستشفى وإرشادك.</li>
-    <li><strong>الميكروفون:</strong> فقط عند الضغط على زر البحث الصوتي، لتحويل كلامك إلى نص بحث باستخدام خدمة التعرّف على الكلام في جهازك. لا يحتفظ التطبيق بأي تسجيل صوتي.</li>
+    <li>حماية خصوصية المستخدم</li>
+    <li>معالجة البيانات التي يحتاجها التطبيق للعمل فقط (تقليل البيانات)</li>
+    <li>الحفاظ على سرية بيانات المستخدم</li>
+    <li>توفير مستوى مناسب من الأمان لبيانات المستخدم</li>
+  </ul>
+  <p>توضّح هذه السياسة كيف نجمع معلوماتك ونستخدمها ونفصح عنها ونحميها عند استخدامك للتطبيق. أُعدّت وفقاً لقانون حماية البيانات الشخصية التركي رقم 6698 (KVKK) وسياسة بيانات المستخدم في Google Play. يُرجى قراءتها بعناية، وإذا كنت لا توافق عليها فيُرجى عدم استخدام التطبيق.</p>
+
+  <h2>1. جمع معلوماتك</h2>
+  <p><strong>1.1. لا حاجة للتسجيل.</strong> لا يتضمن التطبيق إنشاء حساب أو تسجيل دخول. يمكنك استخدام جميع الميزات دون تقديم معلومات شخصية مثل اسمك أو رقم الهوية التركية أو رقم هاتفك أو بريدك الإلكتروني.</p>
+  <p><strong>1.2. المعلومات التي تقدّمها.</strong> المعلومات الوحيدة التي تدخلها هي ما تكتبه أو تنطقه في حقل البحث (مثل اسم قسم أو غرفة)، وتُستخدم لعرض النتائج لك. عند الضغط على زر البحث الصوتي، تحوّل خدمة التعرّف على الكلام في جهازك كلامك إلى نص، ولا يحتفظ التطبيق بأي تسجيل صوتي.</p>
+  <p><strong>1.3. بيانات الجهاز والتحليلات.</strong> يجمع التطبيق تلقائياً عبر Google Firebase Analytics وFirebase Crashlytics طراز الجهاز وإصدار نظام التشغيل والتطبيق، ومعلومات الاستخدام (مثل الشاشات المعروضة والميزات المستخدمة)، وسجلات الأعطال وبيانات التشخيص. وقد يجمع Firebase Analytics أيضاً معرّف الإعلانات في Android. التطبيق لا يعرض إعلانات، وتُستخدم هذه المعلومات فقط لتحسين استقرار التطبيق وسهولة استخدامه، ولا تُربط بهويتك.</p>
+  <p><strong>1.4. الإشعارات.</strong> لإيصال إعلانات المستشفى، تُنشئ خدمة Firebase Cloud Messaging رمز إشعارات خاصاً بجهازك.</p>
+  <p><strong>1.5. ما لا نجمعه أبداً.</strong> لا نجمع معلوماتك الصحية أو سجلاتك الطبية أو جهات الاتصال أو الصور أو الملفات أو الرسائل، ولا نشتري بيانات من وسطاء البيانات.</p>
+
+  <h3>1.6. خدمات الموقع</h3>
+  <p>لا يصل التطبيق إلى موقع جهازك إلا عندما تمنحه إذن الموقع وتستخدم ميزة تعتمد عليه.</p>
+  <p><strong>(أ) الموقع أثناء استخدام التطبيق.</strong> تستخدم ميزة الإرشاد داخل المبنى إشارات GPS والبلوتوث وWi-Fi عبر خدمة Situm لتحديد الموقع داخل المباني، لإظهار موقعك داخل المستشفى وإرشادك إلى وجهتك.</p>
+  <p><strong>(ب) الصيدليات القريبة.</strong> عند البحث عن الصيدليات القريبة منك، تُرسل إحداثياتك إلى خادم خدمة التطبيق فقط لعرض أقرب الصيدليات إليك.</p>
+  <p><strong>(ج) الموقع في الخلفية.</strong> لا يصل التطبيق إلى موقعك عندما لا يكون قيد الاستخدام، ولا يطلب إذن الموقع في الخلفية.</p>
+  <p><strong>(د) فيمَ يُستخدم الموقع وفيمَ لا يُستخدم.</strong> يُستخدم في: الإرشاد داخل المستشفى والبحث عن الصيدليات. لا يُستخدم في: الإعلانات أو التسويق أو بناء الملفات التعريفية أو بيع البيانات.</p>
+  <p><strong>(هـ) المشاركة والأطراف الثالثة.</strong> لا نسمح لأي طرف خارجي باستخدام موقعك لأغراضه الخاصة. يُعالَج الموقع فقط من قِبل جهات تقديم الخدمة مثل Situm وخرائط Google نيابةً عن التطبيق. وقد تعالج خدمات الموقع في نظام تشغيل جهازك إشارات الموقع كجزء من عملها المعتاد.</p>
+  <p><strong>(و) التحكم بيدك.</strong> يمكنك استخدام التطبيق دون تفعيل ميزات الموقع، ويمكنك منح إذن الموقع أو سحبه في أي وقت من إعدادات جهازك، وقد لا تعمل حينها ميزتا الإرشاد والصيدليات القريبة.</p>
+
+  <p><strong>1.7. بيانات تبقى على جهازك فقط.</strong> تُحفظ لغة التطبيق التي تختارها وعمليات البحث الأخيرة مشفّرةً على جهازك، ولا تُرسل إلينا. وتُحذف عند إلغاء تثبيت التطبيق أو مسح بياناته.</p>
+  <p><strong>1.8. الأذونات.</strong> يطلب التطبيق الأذونات التالية فقط عند استخدامك للميزة المرتبطة بها:</p>
+  <ul>
+    <li><strong>الموقع والبلوتوث وWi-Fi:</strong> لتحديد موقعك داخل المستشفى وإرشادك.</li>
+    <li><strong>الكاميرا:</strong> لمسح رموز QR في المستشفى. تُعالج الصور على الجهاز ولا تُحفظ ولا تُرسل.</li>
+    <li><strong>الميكروفون:</strong> للبحث الصوتي.</li>
     <li><strong>الهاتف:</strong> لبدء مكالمة عند الضغط على رقم هاتف داخل التطبيق.</li>
     <li><strong>الإشعارات:</strong> لإيصال إعلانات المستشفى.</li>
   </ul>
-  <p>يمكنك إيقاف الأذونات في أي وقت من إعدادات جهازك، وقد تتوقف الميزة المرتبطة بها عن العمل.</p>
 
-  <h2>6. مشاركة البيانات</h2>
-  <p>لا تُباع بياناتك ولا تُؤجّر ولا تُستخدم لأغراض إعلانية. تعالجها فقط جهات تقديم الخدمة المذكورة أعلاه، نيابةً عن التطبيق وللأغراض الواردة في هذه السياسة. ولا تُشارك مع أي طرف ثالث آخر إلا إذا اقتضى القانون ذلك.</p>
+  <h2>2. استخدام معلوماتك</h2>
+  <p>نستخدم المعلومات التي نجمعها من أجل:</p>
+  <ul>
+    <li>(أ) تقديم التطبيق وصيانته وتشغيل ميزاته، مثل الإرشاد داخل المستشفى والبحث عن الصيدليات</li>
+    <li>(ب) إيصال إعلانات المستشفى عبر الإشعارات</li>
+    <li>(ج) متابعة الاستخدام والاتجاهات وتحليلها لتحسين التطبيق</li>
+    <li>(د) اكتشاف الأخطاء والأعطال وإصلاحها</li>
+    <li>(هـ) الحفاظ على أمان التطبيق وخدماته</li>
+    <li>(و) الالتزام بالقوانين والإجراءات القانونية المعمول بها</li>
+  </ul>
+  <p>لا تُستخدم هذه المعلومات أبداً لأغراض إعلانية.</p>
+
+  <h2>3. مشاركة معلوماتك</h2>
+  <p>لا نبيع بيانات المستخدمين ولا نؤجّرها ولا نرخّصها ولا نستخدمها لتحقيق الربح. قد تُشارك المعلومات فقط:</p>
+  <ul>
+    <li>(أ) مع جهات تقديم الخدمة التي تعمل بتعليماتنا فقط ونيابةً عن التطبيق: Google (Firebase وخرائط Google)، وSitum، وخوادم خدمة التطبيق</li>
+    <li>(ب) عندما يقتضي ذلك القانون أو الإجراءات القانونية أو طلب من السلطات المختصة</li>
+    <li>(ج) عند الحاجة لحماية حقوق المستخدمين أو <bdi>T.C. Sağlık Bakanlığı</bdi> أو حقوقنا أو حقوق الآخرين وممتلكاتهم وسلامتهم</li>
+    <li>(د) بموافقتك أو بناءً على توجيهك</li>
+  </ul>
   <p>سياسات جهات تقديم الخدمة: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>، <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>، <a href="https://situm.com/en/privacy/" target="_blank" rel="noopener">Situm</a>.</p>
 
-  <h2>7. مدة الاحتفاظ والأمان</h2>
-  <p>تُحفظ إحصاءات الاستخدام وتقارير الأعطال طوال مدد الاحتفاظ القياسية في Firebase، ثم تُحذف تلقائياً. تُخزَّن البيانات على الجهاز مشفّرةً، وتُنقل البيانات إلى خدمات Firebase عبر اتصال مشفّر (HTTPS).</p>
+  <h2>4. أمان معلوماتك ومدة الاحتفاظ بها</h2>
+  <p>نتخذ تدابير تقنية وتنظيمية معقولة لحماية معلوماتك من الوصول أو الاستخدام أو الإفصاح غير المصرّح به. تُخزَّن البيانات على الجهاز مشفّرةً، وتُنقل البيانات إلى خدمات Firebase عبر اتصال مشفّر (HTTPS). ومع ذلك، لا يمكن ضمان أمان أي نقل للبيانات عبر الإنترنت أو الشبكات اللاسلكية بنسبة 100%.</p>
+  <p>تُحفظ إحصاءات الاستخدام وتقارير الأعطال طوال مدد الاحتفاظ القياسية في Firebase، ثم تُحذف تلقائياً.</p>
 
-  <h2>8. حقوقك وحذف البيانات</h2>
-  <p>بموجب المادة 11 من قانون KVKK، لك حقوق منها معرفة ما إذا كانت بياناتك تُعالج، وطلب تصحيحها أو حذفها. ولأن التطبيق لا يتضمن حسابات، فإن بياناتك لا تُربط بهويتك. تُحذف البيانات الموجودة على جهازك عند إلغاء تثبيت التطبيق. ولأي طلب آخر، راسلنا على البريد الإلكتروني أدناه.</p>
+  <h2>5. حقوقك وحذف البيانات</h2>
+  <p>بموجب المادة 11 من قانون KVKK، يحق لك معرفة ما إذا كانت بياناتك الشخصية تُعالج، وطلب معلومات عنها، ومعرفة الغرض من معالجتها وما إذا كانت تُستخدم لهذا الغرض، ومعرفة الأطراف الثالثة التي نُقلت إليها، وطلب تصحيحها أو حذفها إذا كانت ناقصة أو غير صحيحة، والاعتراض على معالجتها، والمطالبة بالتعويض عن أي ضرر.</p>
+  <p>ولأن التطبيق لا يتضمن حسابات، فإن بياناتك لا تُربط بهويتك. تُحذف البيانات الموجودة على جهازك عند إلغاء تثبيت التطبيق. ولأي طلب آخر، راسلنا على البريد الإلكتروني أدناه.</p>
 
-  <h2>9. خصوصية الأطفال</h2>
+  <h2>6. خصوصية الأطفال</h2>
   <p>التطبيق غير موجّه للأطفال، ولا يجمع عن علم بيانات شخصية منهم.</p>
 
-  <h2>10. التغييرات</h2>
-  <p>قد تُحدَّث هذه السياسة. تُنشر النسخة الحالية دائماً في هذه الصفحة مع تاريخ سريانها.</p>
+  <h2>7. التغييرات على هذه السياسة</h2>
+  <p>قد نحدّث هذه السياسة في أي وقت، وسنعلن عن التغييرات بتحديث «تاريخ السريان» في أعلى هذه الصفحة. ننصحك بمراجعة هذه الصفحة بشكل دوري. ويُعدّ استمرارك في استخدام التطبيق بعد نشر التغييرات قبولاً للسياسة المحدّثة.</p>
 
-  <h2>11. التواصل</h2>
+  <h2>8. تواصل معنا</h2>
+  <p>لأي أسئلة أو ملاحظات أو طلبات تتعلق بسياسة الخصوصية هذه، يمكنك التواصل معنا:</p>
   <div class="contact">
     <p><strong><bdi>KEYDATA BİLGİ İŞLEM TEKNOLOJİ SİSTEMLERİ A.Ş.</bdi></strong><br>
     البريد الإلكتروني: <a href="mailto:info@keydata.com.tr" dir="ltr">info@keydata.com.tr</a></p>
   </div>
+  <p class="closing">باستخدامك للتطبيق فإنك توافق على سياسة الخصوصية هذه. وإذا كنت لا توافق عليها، فيُرجى عدم استخدام التطبيق.</p>
 </article>
 
 </div>
